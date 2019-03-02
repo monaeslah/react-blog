@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import jwt_decode from 'jwt-decode'
-import { Button } from 'reactstrap';
+import Example from'essay'
 
 class Profile extends Component {
     constructor(){
@@ -46,7 +46,7 @@ class Profile extends Component {
             </table>
           
             </div>
-            <Button outline color="success">click me</Button>{''}
+            <Example/>
             </div>
         )
     }
