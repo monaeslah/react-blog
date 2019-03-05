@@ -25,5 +25,6 @@ essay.post('/profile', (req, res) => {
             shorttext: req.body.shortext,
             image: address
     
-        });
+        })
+    })})
         module.exports = essay
