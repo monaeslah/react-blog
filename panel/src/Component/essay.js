@@ -1,4 +1,19 @@
-export default class Example extends React.Component {
+import React from 'react';
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+
+
+class Essay extends React.Component {
+  constructor(){
+    super()
+    this.state = {
+        first_name:'',//az safhe register bardashtam 
+        last_name:'',
+        email: '',
+        password:'',
+    }
+    this.onChange = this.onChange.bind(this)
+    this.onSubmit = this.onSubmit.bind(this)
+}
   render() {
     return (
       <Form>
@@ -17,8 +32,10 @@ export default class Example extends React.Component {
           </FormText>
         </FormGroup>
         
-        <Button>Submit</Button>
+        <Button type="submit" >
+        Submit</Button>
       </Form>
     );
   }
 }
+export default Essay

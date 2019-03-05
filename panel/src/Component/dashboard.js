@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import Essay from './essay'
 
-export default class Exam extends React.Component {
+ class Dashboard extends React.Component {
   render() {
     return (
       <Container>
@@ -13,6 +14,9 @@ export default class Exam extends React.Component {
       <Col>
       dashboard
       </Col>
+      <Col>
+      <Essay/>
+      </Col>
       </Row>
       </Container>
       </Col>
@@ -21,3 +25,4 @@ export default class Exam extends React.Component {
       );
     }
   }
+  export default Dashboard

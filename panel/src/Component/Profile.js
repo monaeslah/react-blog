@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import jwt_decode from 'jwt-decode'
-import Example from'essay'
+import Dashboard from './dashboard';
+
 
 class Profile extends Component {
     constructor(){
@@ -42,11 +43,15 @@ class Profile extends Component {
             <td>Email</td>
             <td>{this.state.email}</td>
             </tr>
+            <tr>
+            <td>Essay</td>
+            <td><Dashboard/></td>
+            </tr>
             </tbody>
             </table>
           
             </div>
-            <Example/>
+          
             </div>
         )
     }

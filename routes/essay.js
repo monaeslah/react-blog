@@ -1,20 +1,20 @@
 const express = require('express');
-const users = express.Router();
+const essay = express.Router();
 const cors = require('cors')
-const jwt = require('jsonwebtoken')
+
 const bcrypt = require('bcrypt')
 
-const User = require("../models/Essay")
-users.use(cors())
+const Essay = require("../models/Essay")
+essay.use(cors())
 
 process.env.SECRET_KEY = 'secret'
 
-users.post('/upload', (req, res) => {
-    const today = new Date()
+essay.post('/profile', (req, res) => {
+    // const today = new Date()
     const userEssay ={
 
     }
-    app.post("/upload", isLogedIn, upload.single('image'), function (req, res) {
+    app.post("/profile", isLogedIn, upload.single('image'), function (req, res) {
         let address = '/uploads/' + req.file.originalname
     
         let essay = new article({
@@ -26,3 +26,4 @@ users.post('/upload', (req, res) => {
             image: address
     
         });
+        module.exports = essay
